@@ -1,10 +1,11 @@
 ## Local deployment
+<ul>
 
-#### Step 1: Install [IntelliJ IDEA](https://www.jetbrains.com/idea/), [Docker-Desktop](https://www.docker.com/) in your computer if not installed. 
+#### <li> Step 1: Install [IntelliJ IDEA](https://www.jetbrains.com/idea/), [Docker-Desktop](https://www.docker.com/) in your computer if not installed. </li>
 
-#### Step 2: Open the project in IntelliJ IDEA. 
+#### <li>Step 2: Open the project in IntelliJ IDEA. </li>
 
-#### Step 3: Add <em>docker-compose.yml</em> file in the root directory. (Skip: if postgres already installed)
+#### <li>Step 3: Add <em>docker-compose.yml</em> file in the root directory. (Skip: if postgres already installed)
 ``` yml
 version: '3.1'
 
@@ -32,15 +33,18 @@ services:
     ports:
       - "5050:80"
 ```
+</li>
 
-#### Step 4: Changes below fields in <em>application.properties</em>. 
+#### <li>Step 4: Changes below fields in <em>application.properties</em>. 
 ``` properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/test_db
 spring.datasource.username=root
 spring.datasource.password=password
 ```
 <strong>Note:</strong> Please add your own credentials if you have skiped step 1 and 2.
+</li>
 
-#### Step 5: Run the <em>docker-compose.yml</em> file.
+#### <li>Step 5: Run the <em>docker-compose.yml</em> file.</li>
 
-#### Step 6: Run the SpringBoot application by running <em>DemoDeploymentApplication.java</em> class.
+#### <li>Step 6: Run the SpringBoot application by running <em>DemoDeploymentApplication.java</em> class.</li>
+</ul>
